@@ -13,16 +13,6 @@ public class ControlVerifierIdentite {
 	}
 
 	public boolean verifierIdentite(String nomVendeur) {
-		
-		Gaulois vendeur = village.trouverHabitant(nomVendeur);
-		if (village.getNom() == vendeur.getNom()){
-			
-		}else{
-			for (int i = 0; i <= village.donnerVillageois().length; i++){
-				
-				
-			}
-		}
-		return false;
+		return village.trouverHabitant(nomVendeur) != null;
 	}
 }
